@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ISU-1390/AndroidStudioProjects/ImageSlider/app/src/main/res/drawable-v24/background.xml" value="0.1" />
         <entry key="..\:/Users/ISU-1390/AndroidStudioProjects/ImageSlider/app/src/main/res/drawable/background.xml" value="0.1" />
-        <entry key="..\:/Users/ISU-1390/AndroidStudioProjects/ImageSlider/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/ISU-1390/AndroidStudioProjects/ImageSlider/app/src/main/res/drawable/black2.xml" value="0.1" />
+        <entry key="..\:/Users/ISU-1390/AndroidStudioProjects/ImageSlider/app/src/main/res/drawable/fade.xml" value="0.1" />
+        <entry key="..\:/Users/ISU-1390/AndroidStudioProjects/ImageSlider/app/src/main/res/layout/activity_detail_view.xml" value="0.13425925925925927" />
+        <entry key="..\:/Users/ISU-1390/AndroidStudioProjects/ImageSlider/app/src/main/res/layout/activity_main.xml" value="0.13425925925925927" />
         <entry key="..\:/Users/ISU-1390/AndroidStudioProjects/ImageSlider/app/src/main/res/layout/banner_item.xml" value="0.1671875" />
+        <entry key="..\:/Users/ISU-1390/AndroidStudioProjects/ImageSlider/app/src/main/res/layout/promotional_video_item.xml" value="0.1671875" />
       </map>
     </option>
   </component>

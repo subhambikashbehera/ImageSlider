@@ -3,6 +3,7 @@ package com.matm.imageslider
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -15,6 +16,11 @@ class ImageSliderAdapter(var bannerList: ArrayList<BannerModel>) :
         val imageView: ImageView =itemView.findViewById<ImageView>(R.id.imageView)
         fun bind(bannerModel: BannerModel) {
             Glide.with(imageView.context).load(bannerModel.bannerImage).into(imageView)
+            val animZoomIn = AnimationUtils.loadAnimation(imageView.context, R.anim.zoom_in)
+            val animZoomOut = AnimationUtils.loadAnimation(imageView.context, R.anim.zoom_in)
+            // assigning that animation to
+            // the image and start animation
+            imageView.startAnimation(animZoomIn)
         }
     }
 
@@ -28,4 +34,7 @@ class ImageSliderAdapter(var bannerList: ArrayList<BannerModel>) :
     }
 
     override fun getItemCount(): Int = bannerList.size
+
+
+
 }

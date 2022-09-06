@@ -1,10 +1,12 @@
 package com.matm.imageslider
 
 import android.content.Context
+import android.content.Intent
 import android.graphics.Rect
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.View
+import android.widget.Button
 import androidx.annotation.DimenRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.marginLeft
@@ -16,16 +18,26 @@ import java.lang.Math.abs
 class MainActivity : AppCompatActivity() {
 
 
+    lateinit var goToNextActivity:Button
     lateinit var bannerAdapter: ImageSliderAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        goToNextActivity=findViewById(R.id.button)
         supportActionBar?.hide()
 
 
+        goToNextActivity.setOnClickListener {
+            startActivity(Intent(this,DetailView::class.java))
+        }
+
+
+
+
+
+
         val arrayList = ArrayList<BannerModel>()
-        repeat(3) {
+        repeat(2) {
             arrayList.add(
                 BannerModel(
                     "https://www.thoughtco.com/thmb/gtl-IotmuSFI9Li_8OJtaPXGrms=/2592x2592/smart/filters:no_upscale()/89538987-56a1316f3df78cf772684961.jpg",
