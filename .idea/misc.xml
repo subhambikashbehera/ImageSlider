@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ISU-1371/StudioProjects/ImageSliders/app/src/main/res/layout-land/activity_detail_view.xml" value="0.1625" />
+        <entry key="..\:/Users/ISU-1371/StudioProjects/ImageSliders/app/src/main/res/layout/activity_detail_view.xml" value="0.1" />
+        <entry key="..\:/Users/ISU-1371/StudioProjects/ImageSliders/app/src/main/res/layout/activity_main.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/ISU-1371/StudioProjects/ImageSliders/app/src/main/res/layout/activity_main2.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/ISU-1371/StudioProjects/ImageSliders/app/src/main/res/layout/actors_item.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/ISU-1371/StudioProjects/ImageSliders/app/src/main/res/layout/banner_item.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/ISU-1371/StudioProjects/ImageSliders/app/src/main/res/layout/progress_item.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/ISU-1371/StudioProjects/ImageSliders/app/src/main/res/layout/promotional_video_item.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/ISU-1390/AndroidStudioProjects/ImageSlider/app/src/main/res/drawable-v24/background.xml" value="0.1" />
         <entry key="..\:/Users/ISU-1390/AndroidStudioProjects/ImageSlider/app/src/main/res/drawable/background.xml" value="0.1" />
         <entry key="..\:/Users/ISU-1390/AndroidStudioProjects/ImageSlider/app/src/main/res/drawable/black2.xml" value="0.1" />

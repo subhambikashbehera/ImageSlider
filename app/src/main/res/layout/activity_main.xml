@@ -9,47 +9,56 @@
     android:background="@color/white"
     >
 
-    <RelativeLayout
-        android:id="@+id/viewPagerLayout"
-        android:layout_marginTop="20dp"
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        >
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        />
 
-        <androidx.viewpager2.widget.ViewPager2
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:id="@+id/viewPager2"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewPager2"
+        android:layout_centerHorizontal="true"
+       android:layout_marginTop="20dp"
+        android:elevation="200dp"
 
-            />
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
-        <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
-            android:id="@+id/worm_dots_indicator"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="10dp"
-            app:dotsColor="#FDFDFD"
-            app:dotsCornerRadius="8dp"
-            app:dotsSize="10dp"
-            app:dotsSpacing="4dp"
+    <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+        android:id="@+id/worm_dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:dotsColor="#FDFDFD"
+        app:dotsCornerRadius="8dp"
+        app:dotsSize="10dp"
+        app:dotsSpacing="4dp"
+        app:dotsStrokeColor="@color/white"
+        app:dotsStrokeWidth="1dp"
+        android:layout_below="@+id/viewPager2"
+        android:visibility="gone"
+        android:layout_marginTop="-10dp"
+        />
 
-            app:dotsStrokeColor="@color/white"
-            app:dotsStrokeWidth="1dp" >
 
-
-        </com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator>
-
-    </RelativeLayout>
 
 
     <Button
         android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/viewPagerLayout"
+        android:layout_below="@+id/viewPager2"
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="go to the the activity" />
+
+
+
+
+
 </RelativeLayout>
