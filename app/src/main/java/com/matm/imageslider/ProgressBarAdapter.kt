@@ -40,11 +40,11 @@ class ProgressBarAdapter(private var imageModel: ArrayList<BannerModel>) :
         } else {
             if (checkedPosition == position) {
 
-               val obj = object :CountDownTimer(2000,100){
+               val obj = object :CountDownTimer(5000,10){
                     override fun onTick(p0: Long) {
                         //forward progress
-                        val finishedSeconds: Long = 2000 - p0
-                        val total = (finishedSeconds.toFloat() / 2000.toFloat() * 100.0).toInt()
+                        val finishedSeconds: Long = 5000 - p0
+                        val total = (finishedSeconds.toFloat() / 5000.toFloat() * 100.0).toInt()
                         holder.imageView.progress = total+10
                     }
                     override fun onFinish() {

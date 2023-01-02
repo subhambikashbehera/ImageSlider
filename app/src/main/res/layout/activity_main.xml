@@ -13,9 +13,8 @@
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager2"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="20dp"
-        />
+        android:layout_height="250dp"
+         />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/frameLayout"
@@ -23,9 +22,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/viewPager2"
         android:layout_centerHorizontal="true"
-       android:layout_marginTop="20dp"
+       android:layout_marginTop="-20dp"
         android:elevation="200dp"
-
+        tools:listitem="@layout/progress_item"
         android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
@@ -41,20 +40,17 @@
         app:dotsStrokeColor="@color/white"
         app:dotsStrokeWidth="1dp"
         android:layout_below="@+id/viewPager2"
-        android:visibility="gone"
         android:layout_marginTop="-10dp"
         />
 
 
-
-
     <Button
-        android:layout_marginTop="40dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/viewPager2"
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/viewPager2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
         android:text="go to the the activity" />
 
 
